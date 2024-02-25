@@ -1,0 +1,269 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #232f3e;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0 15px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+  }
+
+  a:hover {
+    color: #0f9d58;
+  }
+}
+
+.hero {
+  text-align: center;
+  padding: 50px;
+  background-color: #4285f4;
+  color: white;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0f9d58;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #0a804b;
+}
+
+.services {
+  max-width: 100%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+  transform: scale(1.05);
+}
+
+.about,
+.contact {
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #232f3e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+/* Your existing CSS styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #232f3e;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0 10px; /* Adjusted margin for better spacing on smaller screens */
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+  }
+
+  a:hover {
+    color: #0f9d58;
+  }
+}
+
+/* ... Other styles remain unchanged ... */
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .hero-content {
+    padding: 30px; /* Adjusted padding for smaller screens */
+  }
+
+  .service {
+    width: 100%; /* Make services occupy full width on smaller screens */
+  }
+}
+
+/* Additional CSS for Futuristic Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0f9d58;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, transform 0.10s ease-in-out;
+  animation:pulse 2s infinite alternate; /* Add the pulse animation */
+}
+
+.cta-button:hover {
+  background-color: #0a804b;
+  animation: none; /* Pause the animation on hover */
+}
+
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.hero-content h1 {
+  animation: slideInUp 1s ease-out;
+}
+
+
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(20);
+    opacity: 1;
+  }
+}
+
+nav a.header-link {
+  animation: slideInRight 0.5s ease-out;
+}
+/* Our Services Section Styles */
+.services h2 {
+  text-align: center;
+  color: #4285f4;
+}
+
+/* New Futuristic Feature for CTA Button */
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f1c40f; /* Yellow Color for CTA Button */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  animation: glow 2s infinite alternate, pulse 2s infinite alternate; /* Combine glow and pulse animations */
+}
+
+.cta-button:hover {
+  background-color: #f39c12; /* Darker Yellow Color on Hover */
+  animation: none; /* Pause the animations on hover */
+}
+
+/* ... (Previous styles remain unchanged) */
+
+
+
+
+
+/* ... (Previous styles remain unchanged) */
+
+/* Services Section Styles */
+.services {
+  max-width: 90%;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 60px;
+  margin: 10px;
+  width: calc(60.60% - 50px); /* Adjusted width for better responsiveness */
+  max-width: 400px;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(15, 157, 88, 0.8); /* Futuristic box-shadow on hover */
+}
